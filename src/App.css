@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: #222;
+}
+.search-section input {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border: 1px solid #fda085;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+.default-messages {
+  margin-bottom: 1em;
+}
+.default-messages button {
+  margin: 0 0.5em 0.5em 0;
+  background: #fda085;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.default-messages button:hover {
+  background: #f6d365;
+  color: #222;
+}
+.message-box {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #fda085;
+  padding: 1em;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  resize: vertical;
+}
+.controls {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+}
+.controls button, .controls .lang-select {
+  background: #f6d365;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.controls button:hover, .controls .lang-select:hover {
+  background: #fda085;
+  color: #fff;
+}
+.stickers {
+  display: flex;
+  gap: 1em;
+  margin: 1em 0;
+}
+.sticker {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s;
+  background: #fff;
+}
+.sticker.selected, .sticker:hover {
+  border: 2px solid #fda085;
+}
+.sticker-preview {
+  width: 64px;
+  height: 64px;
+  margin-top: 0.5em;
+}
+.summary {
+  background: #fffbe6;
+  border-radius: 12px;
+  padding: 1em 2em;
+  margin-top: 2em;
+  box-shadow: 0 2px 8px rgba(253, 160, 133, 0.15);
+  max-width: 400px;
+  width: 100%;
+}
+.summary h2 {
+  color: #fda085;
+}
+.lang-select {
+  min-width: 120px;
+}
